@@ -13,7 +13,7 @@
             @endif
                     <input type="hidden" wire:model="hiddenId">
                     <label>Nama :</label>
-                    <input type="text" class ="form-control" wire:model="nama">
+                    <input type="text" class ="form-control" wire:model.lazy="nama">
                     @error ('nama')
                     <span style="color:red">{{'Minimal 3 karakter'}}</span>
                     @enderror
@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label>Alamat :</label>
-                    <input type="text" class ="form-control" wire:model="alamat" >
+                    <input type="text" class ="form-control" wire:model.lazy="alamat" >
                     @error ('alamat')
                     <span style="color:red">{{'Minimal 10 karakter'}}</span>
                     @enderror

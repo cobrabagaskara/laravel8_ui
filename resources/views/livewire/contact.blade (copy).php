@@ -9,12 +9,12 @@
             <form wire:submit.prevent="submit">  
                 
                     <label>Nama :</label>
-                    <input type="text" class ="form-control" wire:model="nama">
+                    <input type="text" class ="form-control" wire:model.lazy="nama">
                 
 
                 <div class="form-group">
                     <label>Alamat :</label>
-                    <input type="text" class ="form-control" wire:model="alamat" >
+                    <input type="text" class ="form-control" wire:model.lazy="alamat" >
                 </div>
                 <button type="submit">Simpan</button>
             </form>
